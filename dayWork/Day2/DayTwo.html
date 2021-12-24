@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day Two</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .change-list-style {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .change-list-style li {
+        padding-left: 16px;
+      }
+      .change-list-style li::before {
+        content: "✓";
+        padding-right: 8px;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Practice Day Two</h1>
+    <p>
+      <strong><mark>Semantic elements =</mark></strong> elements with a meaning.
+      ... A semantic element clearly describes its meaning to both the browser
+      and the developer.
+      <br />
+      Semantic HTML elements are those that clearly describe their meaning in a
+      human- and machine-readable way. semantic elements are all considered
+      semantic because they accurately describe the purpose of the element and
+      the type of content that is inside them
+    </p>
+    <h3>
+      HTML5 has some semantic element: nav, header, footer, main, article,
+      section, aside, figure, figcaption etc.
+    </h3>
+    <p>
+      I Practice start on <time datetime="2021-18-12">December 18</time> this
+      topic.
+    </p>
+    <!-- HTML 5 Semantic Element nav & header Tag-->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Other</a></li>
+        </ul>
+      </nav>
+      <p>
+        The <mark>header</mark> HTML element represents introductory content,
+        typically a group of introductory or navigational aids. It may contain
+        some heading elements but also a logo, a search form, an author name,
+        and other elements.
+      </p>
+    </header>
+    <main>
+      <p>
+        The <strong>main</strong> HTML element represents the dominant content
+        of the <mark>body</mark> of a document. The main content area consists
+        of content that is directly related to or expands upon the central topic
+        of a document, or the central functionality of an application.
+      </p>
+    </main>
+    <a href="DayTwo.html" target="_parent">Home Page</a>
+    <!-- Definition List -->
+    <!-- HTML 5 Semantic Element Article-->
+    <article>
+      <p>The Description List element</p>
+      <dl>
+        <dt>HTML</dt>
+        <dd>Hypet Text Markup Language</dd>
+      </dl>
+      <dl>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+      </dl>
+      <dl>
+        <dt>Js</dt>
+        <dd>JavaScript</dd>
+      </dl>
+      <dl>
+        <dt>WP</dt>
+        <dd>WordPress</dd>
+      </dl>
+    </article>
+    <!-- Unordered List -->
+    <!-- HTML 5 Semantic Element Article-->
+    <article>
+      <ul>
+        <li>Unordered List Item</li>
+        <li>Unordered List Item</li>
+        <li>Unordered List Item</li>
+        <li>Unordered List Item</li>
+      </ul>
+      <ol>
+        <li>Ordered List Item</li>
+        <li>Ordered List Item</li>
+        <li>Ordered List Item</li>
+        <li>Ordered List Item</li>
+        <li>Ordered List Item</li>
+      </ol>
+    </article>
+    <hr />
+    <article>
+      <p>list-style-type: circle</p>
+      <ul style="list-style-type: circle">
+        <li>Unordered List Item</li>
+        <li>Unordered List Item</li>
+        <li>Unordered List Item</li>
+        <li>Unordered List Item</li>
+      </ul>
+      <ol start="4">
+        <li>Ordered List Item</li>
+        <li>Ordered List Item</li>
+        <li>Ordered List Item</li>
+        <li>Ordered List Item</li>
+        <li>Ordered List Item</li>
+      </ol>
+      <!-- ol types = a for lowercase letters
+                    A for uppercase letters
+                    i for lowercase Roman numerals
+                    I for uppercase Roman numerals
+                    1 for numbers (default)
+   -->
+      <ol type="i">
+        <li>Ordered List Item</li>
+        <li>Ordered List Item</li>
+        <li>Ordered List Item</li>
+        <li>Ordered List Item</li>
+        <li>Ordered List Item</li>
+      </ol>
+      <!-- ul -->
+      <ul class="change-list-style">
+        <li>List style</li>
+        <li>List style</li>
+        <li>List style</li>
+        <li>List style</li>
+      </ul>
+    </article>
+    <!-- HTML 5 Semantic Element Section Element. -->
+    <section>
+      <a href="https://www.google.com/" target="_blank">
+        <img
+          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+          alt="GOOGle"
+        />
+      </a>
+      <br />
+      <a href="#" class="top" target="_top">Click to go Top</a> <br />
+      <br />
+      <!-- Address Tag Use -->
+      <address>
+        Written by
+        <a href="mailto:vertuaolxpress@gmail.com">ওয়েব ডেভেলপার</a>.<br />
+        Visit us at:<br />
+        devhub7.com<br />
+        খুলনা, বাংলাদেশ<br />
+      </address>
+    </section>
+    <!-- HTML 5 Semantic Element Figure  Figcaption-->
+    <p><strong>Using HTML 5 Semantic Element Figure.</strong></p>
+    <figure>
+      <img
+        width="450"
+        src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/elephant-660-480.jpg"
+        alt="Elephant"
+      />
+      <figcaption>This is an elephant.</figcaption>
+    </figure>
+    <!-- HTML 5 Semantic Element Footer -->
+    <details>
+      <summary>What is Web Page?</summary>
+      <p>
+        A web page or webpage is a document, commonly written in HTML, that is
+        viewed in an Internet browser. ... A web page may contain text,
+        graphics, and hyperlinks to other web pages and files. A web page is
+        often used to provide information to viewers, including pictures or
+        videos to help illustrate important topics.
+      </p>
+    </details>
+    <!-- HTML 5 Semantic Element Aside -->
+    <aside>
+      <p>
+        The
+        <b
+          ><mark
+            ><a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside"
+              target="_blank"
+              >aside</a
+            ></mark
+          ></b
+        >
+        HTML element represents a portion of a document whose content is only
+        indirectly related to the document's main content. Asides are frequently
+        presented as sidebars or call-out boxes.
+      </p>
+    </aside>
+    <!-- &copy;  -->
+    <!-- HTML 5 Semantic Element Footer-->
+    <footer>
+      <p>
+        <center>
+          <big
+            ><strong
+              >&copy; All Rights Reserved Lfwf-Batch-30, ID-1307</strong
+            ></big
+          >
+        </center>
+      </p>
+    </footer>
+    <!-- Foot Note: Here WE Usa a depricated tag center. Which is not suported in HTML5 version. We Use CSS- Text-align Propert instead center Tag. -->
+  </body>
+</html>

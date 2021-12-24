@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Image Tag</title>
+  </head>
+  <body>
+    <h1>Is Image(img tag) Inline or Block elements?</h1>
+
+    <p>
+      IMG elements are inline, meaning that unless they are floated they will
+      flow horizontally with text and other inline elements.
+    </p>
+
+    <p>
+      They are "block" elements in that they have a width and a height. Whenever
+      you insert an image it just takes the width that the image has originally.
+      You can add any other html element next to it and you will see that it
+      will allow it. That makes image an "inline" element
+    </p>
+    <p>
+      It's true, they are both - or more precisely, they are "inline block"
+      elements. This means that they flow inline like text, but also have a
+      width and height like block elements. It's true, they are both - or more
+      precisely, they are "inline block" elements. This means that they flow
+      inline like text, but also have a width and height like block elements.
+    </p>
+
+    <p>
+      In CSS, you can set an element to display: inline-block to make it
+      replicate the behaviour of images*. Images and objects are also known as
+      "replaced" elements, since they do not have content per se, the element is
+      essentially replaced by binary data. * Note that browsers technically use
+      display: inline (as seen in the developer tools) but they are giving
+      special treatment to images. They still follow all traits of inline-block.
+    </p>
+    <h2>Image linking Path</h2>
+    <p>
+      Using absolute paths forces the web server to establish a connection, send
+      and receive the HTTP requests. If using relative, the connection is
+      already established, so it doesn't have to go through that logic (hence
+      increasing page load speed).
+    </p>
+    <!-- Usage of Image Tag -->
+    <img src="mr.mokles.jpg" alt="An Image" />
+    <h3>Relative File Paths</h3>
+    <p>A relative file path points to a file relative to the current page.</p>
+    <!-- Relative Image path -->
+    <img src="assets/img/mr.mokles.jpg" alt=Image">
+    <img src="./images/mr.mokles.jpg" alt="Image" />
+    <!-- Absolute File Paths -->
+    <img
+      src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+      alt="google"
+    />
+    <!-- Image path - Relative -->
+    <img src="../mr.mokles.jpg" alt="Mr.Mokles" />
+    <!-- linking image -->
+    <a href="https://www.google.com" target="_blank">
+      <img src="assets/img/google.png" alt="google" />
+    </a>
+
+    <footer>
+      <p style="text-align: center">&copy; All Right Reserved. devhub7</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table</title>
+  </head>
+  <body>
+    <!-- Table -->
+    <table
+      border="1"
+      align="center"
+      cellspacing="1px"
+      cellpadding="5px"
+      width="400"
+      style="text-align: center"
+    >
+      <caption>
+        Table 1
+      </caption>
+      <thead>
+        <tr>
+          <th>Sl. No.</th>
+          <th>Name.</th>
+          <th>Id</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Abdul Karim</td>
+          <td>1301</td>
+        </tr>
+        <tr>
+          <td valign="bottom">1</td>
+          <td>Abdul Karim</td>
+          <td>1301</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Abdul Karim</td>
+          <td>1301</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Abdul Karim</td>
+          <td>1301</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">End of Table.</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- Table 2-->
+    <table border="1">
+      <caption>
+        Table 2
+      </caption>
+      <tr>
+        <td>A</td>
+        <td rowspan="3">
+          <p>Lorem, ipsum dolor.</p>
+          <hr />
+          <p>Lorem, ipsum dolor.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>C</td>
+      </tr>
+    </table>
+    <!-- Table 3 -->
+    <h3>Table 3</h3>
+    <table
+      border="1"
+      style="width: 45%; border-collapse: collapse"
+      cellpadding="15"
+      cellspacing="15"
+    >
+      <caption style="caption-side: bottom">
+        Depricated Attribute Practice In Table
+      </caption>
+      <thead>
+        <tr>
+          <th bgcolor="green">Month</th>
+          <th bgcolor="red">Savings</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="height: 50px">
+          <td valign="bottom">January</td>
+          <td valign="bottom">$100</td>
+        </tr>
+        <tr style="height: 50px">
+          <td valign="bottom">February</td>
+          <td valign="bottom">$50</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2"><center>End of Table</center></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h1>Sample of Table</h1>
+    <table border="1" cellspacing="10">
+      <caption>
+        Table 4
+      </caption>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+      </tr>
+    </table>
+    <!-- Example of Table colspan -->
+    <h3>Example of Table colspan</h3>
+    <table border="1" cellspacing="10">
+      <caption>
+        Table 5
+      </caption>
+      <tr>
+        <td colspan="2">1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td colspan="2">3</td>
+      </tr>
+    </table>
+    <!-- Example of Table colspan -->
+    <h3>Another example of Table colspan</h3>
+    <div class="table-center">
+      <table border="1" cellspacing="10">
+        <caption>
+          Table 6
+        </caption>
+        <tr>
+          <td colspan="2">1-2</td>
+          <td colspan="2">3-4</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td colspan="4">1-4</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td colspan="2">2-3</td>
+          <td>4</td>
+        </tr>
+      </table>
+    </div>
+    <!-- Example of Table rowspan -->
+    <h3>Mix rowspan & colspan Example</h3>
+    <div class="table-center">
+      <table border="1" cellspacing="10">
+        <caption>
+          Table 7
+        </caption>
+        <tr>
+          <td rowspan="2">1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td rowspan="3">6</td>
+        </tr>
+        <tr>
+          <td rowspan="2">2</td>
+          <td colspan="3">3-5</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+      </table>
+    </div>
+    <!-- Table with Caption -->
+    <table border="1" cellspacing="5" style="text-align: center">
+      <caption>
+        <h3>Weather Station</h3>
+      </caption>
+      <thead>
+        <tr>
+          <th rowspan="2">Station</th>
+          <th colspan="2">Temperature</th>
+          <th rowspan="2">Humidity</th>
+          <th rowspan="2">Weather</th>
+        </tr>
+        <tr>
+          <th>Max</th>
+          <th>Min</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>USA</td>
+          <td>24</td>
+          <td>19</td>
+          <td>60%</td>
+          <td>cloudy</td>
+        </tr>
+        <tr>
+          <td>Germany</td>
+          <td>5</td>
+          <td>-1</td>
+          <td>-70%</td>
+          <td>Rainy</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="5">Table Footer.</th>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Table Work With Colspan-->
+    <h2>Table Work With Colspan</h2>
+    <table border="1">
+      <caption>
+        Table 8
+      </caption>
+      <tr>
+        <th colspan="4">KhanNew Self Store</th>
+      </tr>
+      <tr>
+        <td>Item/Desc</td>
+        <td>Qty</td>
+        <td>Price/Unit</td>
+        <td>Total</td>
+      </tr>
+      <tr>
+        <td>Sugger</td>
+        <td>5kg</td>
+        <td>50</td>
+        <td>250</td>
+      </tr>
+      <tr>
+        <td>Cooking Oil</td>
+        <td>2kg</td>
+        <td>200</td>
+        <td>400</td>
+      </tr>
+      <tr>
+        <td>Soap</td>
+        <td>4Pices</td>
+        <td>40</td>
+        <td>160</td>
+      </tr>
+      <tr>
+        <td colspan="3">Sub Total</td>
+        <td>810</td>
+      </tr>
+      <tr>
+        <td colspan="2">Tax</td>
+        <td>5%</td>
+        <td>41</td>
+      </tr>
+      <tr>
+        <td colspan="3">Total Bill</td>
+        <td>851</td>
+      </tr>
+    </table>
+    <!-- Table With Trix -->
+    <h2>Final Task- Try To do this job</h2>
+    <img src="./img/table.jpg" alt="Fix Table" />
+    <!-- MySelf Practice -->
+    <table border="1" ‍cellspacing="10" width="150" style="text-align: center">
+      <caption>
+        Table 9
+      </caption>
+      <tr>
+        <!--Table Row 1-->
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <!--Table Row 2-->
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <!--Table Row 3-->
+        <td>1</td>
+        <td>2</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <!--Table Row 4-->
+        <td>1</td>
+        <td>5</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <!--Table Row 5-->
+        <td>1</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <!--Table Row 6-->
+        <td>1</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+    </table>
+    <h2>Practice MySelf</h2>
+    <table border="1" ‍cellspacing="10" width="150" style="text-align: center">
+      <caption>
+        Table 10
+      </caption>
+      <tr>
+        <!--Table Row 1-->
+        <td rowspan="6">1</td>
+        <td rowspan="3">2</td>
+        <td rowspan="2">3</td>
+      </tr>
+      <tr>
+        <!--Table Row 2-->
+      </tr>
+      <tr>
+        <!--Table Row 3-->
+        <td>4</td>
+      </tr>
+      <tr>
+        <!--Table Row 4-->
+        <td rowspan="3">5</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <!--Table Row 5-->
+        <td rowspan="2">6</td>
+      </tr>
+      <tr>
+        <!--Table Row 6-->
+      </tr>
+    </table>
+    <!-- Way One -->
+    <table border="1px">
+      <caption>
+        Table 11
+      </caption>
+      <tr>
+        <td rowspan="6">&nbsp;1</td>
+        <!-- Box 1 -->
+        <td rowspan="3">&nbsp;2</td>
+        <!-- Box 2 -->
+        <td rowspan="2">&nbsp;3</td>
+        <!-- Box 3 -->
+      </tr>
+      <tr></tr>
+      <tr>
+        <td rowspan="2">&nbsp;4</td>
+      </tr>
+      <!-- Box 4 -->
+      <tr>
+        <td rowspan="3">&nbsp;5</td>
+      </tr>
+      <!-- Box 5 -->
+      <tr>
+        <td rowspan="2">&nbsp;6</td>
+      </tr>
+      <!-- Box 6 -->
+      <tr></tr>
+    </table>
+
+    <!-- Way Two -->
+    <table border="1">
+      <caption>
+        Table 12
+      </caption>
+      <tr>
+        <td rowspan="4">&nbsp;1</td>
+        <td rowspan="2">&nbsp;2</td>
+        <td>&nbsp;3</td>
+      </tr>
+      <tr>
+        <td rowspan="2">&nbsp;4</td>
+      </tr>
+      <tr>
+        <td rowspan="2">&nbsp;5</td>
+      </tr>
+      <tr>
+        <td>&nbsp;6</td>
+      </tr>
+    </table>
+    <!-- Way 3 -->
+    <table border="1px">
+      <caption>
+        Table 13
+      </caption>
+      <tr>
+        <th rowspan="6">1</th>
+        <td rowspan="3">2</td>
+        <td rowspan="2">3</td>
+      </tr>
+      <tr>
+        <!-- empty row -->
+      </tr>
+      <tr>
+        <td rowspan="2">4</td>
+      </tr>
+      <tr>
+        <td rowspan="3">5</td>
+      </tr>
+      <tr>
+        <td rowspan="2">6</td>
+      </tr>
+      <tr>
+        <!-- empty row -->
+      </tr>
+    </table>
+    <!-- Table Trix -->
+    <table border="1" style="border-collapse: collapse">
+      <caption style="caption-side: bottom">
+        Table Trix Table
+      </caption>
+      <tr>
+        <td>1 = One</td>
+        <td rowspan="3">
+          <p>Lorem, ipsum dolor.</p>
+          <hr />
+          <p>Lorem, ipsum dolor.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>2 = Two</td>
+      </tr>
+      <tr>
+        <td>3 = Three</td>
+      </tr>
+    </table>
+    <!-- Complex Table -->
+    <!-- Complex Table Design -->
+    <img src="../img/complex_table.jpg" alt="Complex Table" />
+    <table border="1" cellspacing="10" cellpadding="15">
+      <caption>
+        A complex table
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="3" bgcolor="#ff0000">Invoice #123456789</th>
+          <th bgcolor="#00ff00">14 January 2025</th>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <strong>Pay to:</strong><br />
+            Acme Billing Co.<br />
+            123 Main St.<br />
+            Cityville, NA 12345
+          </td>
+          <td colspan="2">
+            <strong>Customer:</strong><br />
+            John Smith<br />
+            321 Willow Way<br />
+            Southeast Northwestershire, MA 54321
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Name / Description</th>
+          <th>Qty.</th>
+          <th>@</th>
+          <th>Cost</th>
+        </tr>
+        <tr>
+          <td>Paperclips</td>
+          <td>1000</td>
+          <td>0.01</td>
+          <td>10.00</td>
+        </tr>
+        <tr>
+          <td>Staples (box)</td>
+          <td>100</td>
+          <td>1.00</td>
+          <td>100.00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="3">Subtotal</th>
+          <td>110.00</td>
+        </tr>
+        <tr>
+          <th colspan="2">Tax</th>
+          <td>8%</td>
+          <td>8.80</td>
+        </tr>
+        <tr>
+          <th colspan="3">Grand Total</th>
+          <td height="50px" style="text-align: center; vertical-align: bottom">
+            $ 118.80
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- Table Generator -->
+    <a href="https://www.tablesgenerator.com/" target="_blank"
+      >Table Generator</a
+    >
+    <footer>
+      <p style="text-align: center">&copy; All Right Reserved. devhub7</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML-Form</title>
+  </head>
+  <body>
+    <form action="">
+      <label>Username: <input type="text" /></label>
+      <label>Password: <input type="password" /></label>
+      <input type="submit" value="Sumbit" />
+      <hr />
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" />
+      <label for="user-pwd">Password:</label>
+      <input type="password" name="user-password" id="user-pwd" />
+      <hr />
+      <input type="radio" name="gender" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="female">Female</label>
+      <hr />
+      <input type="checkbox" name="sports" id="football" />
+      <label for="football">Football</label>
+      <input type="checkbox" name="sports" id="cricket" />
+      <label for="cricket">Cricket</label>
+      <input type="checkbox" name="sports" id="baseball" />
+      <label for="baseball">Baseball</label>
+      <hr />
+      <label for="file-select">Upload:</label>
+      <input type="file" name="upload" id="file-select" />
+      <hr />
+      <label for="address">Address:</label>
+      <textarea name="address" id="address" cols="30" rows="10"></textarea>
+      <hr />
+      <label for="city">City:</label>
+      <select name="city" id="city">
+        <option value="Dhaka">Dhaka</option>
+        <option value="Khulna">Khulna</option>
+        <option value="Chittagong">Chittagong</option>
+      </select>
+      <hr />
+      <fieldset>
+        <legend>Contact Details</legend>
+        <label>Email Address: <input type="email" name="email" /></label>
+        <label>Phone Number: <input type="text" name="phone" /></label>
+      </fieldset>
+      <label for="mycolor">Select Color:</label>
+      <input type="color" value="#00ff00" id="mycolor" />
+      <hr />
+      <label for="mydate">Select Date:</label>
+      <input type="date" value="1990-10-21" id="mydate" />
+      <hr />
+      <label for="mydatetime">Choose Date and Time:</label>
+      <input type="datetime-local" id="" mydatetime />
+      <hr />
+      <label for="myemail">Enter Email Address</label>
+      <input type="email" id="myemail" required />
+      <hr />
+      <label for="mymonth">Select Month:</label>
+      <input type="month" id="mymonth" />
+      <hr />
+      <label for="mynumber">Enter a Number:</label>
+      <input type="number" min="1" max="100" step="0.5" id="mynumber" />
+      <hr />
+      <label for="mysearch">Search Website:</label>
+      <input type="search" id="mysearch" />
+      <hr />
+      <label for="myphone">Telephone Number:</label>
+      <input type="tel" id="myphone" placeholder="xx-xxxx-xxxx" required />
+      <hr />
+      <label for="mytime">Select Time:</label>
+      <input type="time" id="mytime">
+      <hr>
+      <input type="hidden" />
+      <hr />
+      <input type="button" value="Button" />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>

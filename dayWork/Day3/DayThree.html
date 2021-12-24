@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day Three</title>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- Primary Discussion -->
+    <section>
+      <article>
+        <p>
+          <strong><mark>The name attribute</mark></strong> specifies the name of
+          an <b>input</b> element. The name attribute is used to reference
+          elements in a JavaScript, or to reference form data after a form is
+          submitted.
+        </p>
+        <p>
+          <strong><mark>The for attribute</mark></strong> is used in labels. It
+          refers to the id of the element this label is associated with. Now
+          when the user clicks with the mouse on the username text the browser
+          will automatically put the focus in the corresponding input field.
+          This also works with other input elements such as
+          <mark>textbox tag</mark> and
+          <mark>select tag</mark>
+        </p>
+        <p>
+          <strong><mark>The value attribute</mark></strong> specifies the value
+          to be sent to a server when a form is submitted. The content between
+          the opening <mark>option</mark>and closing<mark>option</mark> tags is
+          what the browsers will display in a drop-down list. However, the value
+          of the value attribute is what will be sent to the server when a form
+          is submitted.
+        </p>
+        <h3>Some Points about name & id attribute in html form.</h3>
+        <p>
+          Name should only exist on form input fields. It is what that tag will
+          cause the browser to pass in the submission as the name of the field.
+          As Tomalak noted in a comment, DIV actually does not have a Name
+          attribute. ID is the unique identifier for the DOM, to manipulate or
+          refer to the tag; for example, in JavaScript.
+        </p>
+        <p>
+          Name attribute gets added as a variable to the document object in
+          JavaScript. Any form controls with a name inside that form are
+          accessible as child objects on the form element. the name value is
+          used with forms to help with the processing of forms, particularly
+          with radio buttons. How you use the name attribute depends on your use
+          case. If you need some other tag for your use case, you can of course
+          create a new attribute and use that as you will; pick a name for your
+          attribute that will likely be very unique!
+        </p>
+        <p>
+          Name should only exist on form input fields. It is what that tag will
+          cause the browser to pass in the submission as the name of the field.
+          As Tomalak noted in a comment, DIV actually does not have a Name
+          attribute. ID is the unique identifier for the DOM, to manipulate or
+          refer to the tag; for example, in JavaScript.
+        </p>
+      </article>
+    </section>
+    <hr />
+    <!-- HTML Form -->
+    <form action="index.php" method="get" class="form-example">
+      <div class="form-example">
+        <!-- input type text -->
+        <label for="name">Enter your name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name Here"
+          required
+        />
+      </div>
+      <!-- input type email -->
+      <div class="form-example">
+        <label for="email">Enter your email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email Here"
+          required
+        />
+      </div>
+      <!-- input type password -->
+      <div class="form-example">
+        <label for="pass">Enter your email:</label>
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          required
+          placeholder="Type Password"
+        />
+      </div>
+
+      <!-- input type checkbox -->
+      <div class="form-example">
+        <input type="checkbox" name="" id="" />
+      </div>
+      
+      <input type="color" name="" id="" />
+      <input type="date" name="" id="" />
+      <input type="datetime-local" name="" id="" />
+      <div class="form-examle">
+        <label for="week">Select a week</label>
+        <input type="week" name="week" id="week" />
+      </div>
+      <input type="month" name="" id="" />
+      <input type="email" name="" id="" placeholder="example@email.com" />
+      <input type="number" name="" id="" placeholder="Type Your Age" />
+      <input type="tel" name="" id="" placeholder="Type Your Phone +880-0000" />
+      <input type="password" name="" id="" placeholder="Type Your PassWord" />
+      <input type="radio" name="gender" id="" /> Male
+      <input type="radio" name="gender" id="" /> Female
+      <input type="radio" name="gender" id="" /> Others
+      <input type="range" name="" id="" />
+      <input type="search" name="" id="" placeholder="Search Here..." />
+      <input type="url" name="" id="" placeholder="Type Your URL here..." />
+      <input type="hidden" name="" />
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Type your message here"
+      ></textarea>
+      <select name="" id="">
+        <option value="Dhaka">Dhaka</option>
+        <option value="Khulna" selected>Khulna</option>
+        <option value="Chittagong">Chittagong</option>
+        <option value="Cumilla">Cumilla</option>
+        <option value="Rangpur">Rangpur</option>
+        <option value="Rajshahi">Rajshahi</option>
+      </select>
+      <!-- input type button, submit, reset -->
+      <div class="form-example">
+        <input type="button" value="Button" />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+    <hr />
+    <!-- Resource Link -->
+    <h2>Resource Link</h2>
+    <ul>
+      <li>
+        <a
+          target="_blank"
+          href="https://www.w3schools.com/tags/att_input_type.asp"
+          >W3school</a
+        >
+      </li>
+      <li>
+        <a target="_blank" href="https://html.com/attributes/input-type/"
+          >HTML.Com</a
+        >
+      </li>
+      <li>
+        <a
+          target="_blank"
+          href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_option_selected"
+          >Select>Option Tag</a
+        >
+      </li>
+      <li>
+        <a
+          target="_blank"
+          href="https://stackoverflow.com/questions/3518002/how-can-i-set-the-default-value-for-an-html-select-element"
+          >StacOverflow-option</a
+        >
+      </li>
+      <li>
+        <a target="_blank" href="https://html.com/attributes/option-selected/"
+          >HTML5.COM-Selected/Option</a
+        >
+      </li>
+      <li>
+        <a
+          target="_blank"
+          href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_radio"
+          >Radio-Button</a
+        >
+      </li>
+      <li>
+        <a
+          target="_blank"
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio"
+          >Input-radio-MDN</a
+        >
+      </li>
+      <li>
+        <a
+          target="_blank"
+          href="https://www.html.am/html-codes/forms/html-radio-button-code.cfm"
+          >Basic Radio Button Example</a
+        >
+      </li>
+      <li>
+        <a
+          target="_blank"
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox"
+          >Input Checkbox</a
+        >
+      </li>
+      <li>
+        <a
+          target="_blank"
+          href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_checkbox"
+          >Example checkbox</a
+        >
+      </li>
+      <li>
+        <a
+          target="_blank"
+          href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_file"
+          >Input Fields</a
+        >
+      </li>
+      <li>
+        <a
+          target="_blank"
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file"
+          >Input File</a
+        >
+      </li>
+      <li>
+        <a target="_blank" href="https://html.com/input-type-file/"
+          >Input File</a
+        >
+      </li>
+      <li>
+        <a
+          target="_blank"
+          href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit"
+          >Example of Form Submit</a
+        >
+      </li>
+      <li>
+        <a
+          target="_blank"
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"
+          >Form Elemenent - MDN</a
+        >
+      </li>
+    </ul>
+    <!-- &copy;  -->
+    <!-- HTML 5 Semantic Element Footer-->
+    <footer>
+      <p>
+        <center>
+          <big
+            ><strong
+              >&copy; All Rights Reserved Lfwf-Batch-30, ID-1307</strong
+            ></big
+          >
+        </center>
+      </p>
+    </footer>
+    <!-- Foot Note: Here WE Usa a depricated tag center. Which is not suported in HTML5 version. We Use CSS- Text-align Propert instead center Tag. -->
+  </body>
+</html>
