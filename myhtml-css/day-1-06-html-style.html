@@ -5,28 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML style</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <h1>Basic Learner Foundation</h1>
+    <h1 style="text-shadow: -15px 19px 3px grey">Basic Learner Foundation</h1>
     <!-- Heading Tag -->
-    <h1>This is heading One</h1>
-    <h2>This is heading One</h2>
-    <h3>This is heading One</h3>
-    <h4>This is heading One</h4>
-    <h5>This is heading One</h5>
-    <h6>This is heading One</h6>
+    <h1 style="color: red">This is heading One</h1>
+    <h2 style="color: #00ff00">This is heading Two</h2>
+    <h3 style="color: hsl(241, 100%, 50%)">This is heading Four</h3>
+    <h4 style="background-color: #000; color: #ffffff">This is heading Five</h4>
+    <h5 style="color: #ff634780">This is heading Six</h5>
+    <h6 style="text-align: center; color: rgba(148, 50, 79, 255)">
+      This is heading Seven
+    </h6>
     <!-- P Tag -->
-    <p>I love Hablu.</p>
+    <p style="text-transform: uppercase">I love Hablu.</p>
     <!-- Use of B Tag -->
-    <p><b>I love Hablu.</b></p>
+    <p style="text-transform: lowercase"><b>I love Hablu.</b></p>
     <!-- Use of strong Tag -->
-    <p><strong>I love Hablu.</strong></p>
+    <p style="text-transform: capitalize"><strong>I love Hablu.</strong></p>
     <!-- Use of i Tag -->
-    <p><i>I love Hablu.</i></p>
+    <p style="text-decoration: overline"><i>I love Hablu.</i></p>
     <!-- Use of em Tag -->
-    <p><em>I love Hablu.</em></p>
+    <p style="text-decoration: underline"><em>I love Hablu.</em></p>
     <!-- Use of mark Tag -->
-    <p><mark>I love Hablu</mark></p>
+    <p style="text-decoration: line-through"><mark>I love Hablu</mark></p>
     <!-- Use of del Tag -->
     <p><del>I don't love Hablu.</del></p>
     <!-- Use of ins Tag -->
@@ -61,7 +69,15 @@
     <p>Hablu <sub>2</sub> You</p>
     <!-- Use of sup Tag -->
     x<sup>2</sup>+y<sup>2</sup>
-    <p>
+    <p
+      style="
+        background-color: #3f77df;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        font-size: 18px;
+        word-spacing: 3px;
+      "
+    >
       Lorem ipsum dolor sit amet consectetur, <br />
       adipisicing elit. Nulla itaque nam suscipit obcaecati consequatur sequi
       sapiente labore minus pariatur placeat?
