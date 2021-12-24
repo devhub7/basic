@@ -232,8 +232,71 @@
         <input type="radio" name="gender" /> Male<br />
         <input type="radio" name="gender" /> Male<br />
         <br />
+        <!-- Datalist -->
+        <h3>Write Your Browser Name</h3>
+        <input type="text" list="browsers" />
+        <datalist id="browsers">
+          <option value="IE">Internet Explorer</option>
+          <option value="MoZ">Mozilla</option>
+          <option value="Chrome">Google Chrome</option>
+        </datalist>
+        <h3>Select Country</h3>
+        <select multiple size="2">
+          <option value="UAE">UAE</option>
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="Bangladesh" selected>Bangladesh</option>
+          <option value="Hungry">Hungry</option>
+        </select>
+        <br />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Type Message"
+        ></textarea>
+        <br />
         <input type="submit" value="Submit" />
       </fieldset>
+    </form>
+    <!-- Form Method Get & Post Understand -->
+    <h2>Input FOrm Get & Post Method</h2>
+    <form action="#" method="GET">
+      <label for="userName">User Name:</label> <br />
+      <input name="User" id="userName" type="text" />
+      <br /><br />
+      <label for="Pass">Password: </label>
+      <br />
+      <input name="pass" id="Pass" type="password" />
+      <br /><br />
+      <label for="Mail">Email:</label>
+      <br />
+      <input type="email" id="Mail" required />
+      <br />
+      <br />
+      <input type="checkbox" name="myChoice" id="myCar" checked />
+      <label for="myCar">I have a car.</label>
+      <br />
+      <input type="checkbox" name="myChoice" id="myBike" />
+      <label for="myBike">I hava a bike.</label>
+      <br /><br />
+      <input type="file" />
+      <br /><br />
+      <input type="url" />
+      <label for="url">Give Your URL:</label>
+      <br /><br />
+      <label for="range">Select Your range:</label>
+      <input type="range" />
+      <br /><br />
+      <label for="date">Date:</label>
+      <input type="date" />
+      <br /><br />
+      <label for="tel">Telephone Number:</label>
+      <input type="tel" />
+      <br /><br />
+      <input type="submit" value="Send" />
+      <input type="reset" value="Reset" />
     </form>
     <footer>
       <p style="text-align: center">&copy; All Right Reserved. devhub7</p>
